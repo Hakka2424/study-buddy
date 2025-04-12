@@ -1,0 +1,102 @@
+.navbar {
+  background-color: #990033; /* NMSU maroon */
+  color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+  z-index: 1000;
+}
+
+  .page-container {
+    padding-top: 60px;
+  }
+  
+  
+  /* Left side: logo + nav links */
+  .nav-left {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex: 1;
+    min-width: 0;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+  }
+  
+  .logo {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #1a202c;
+    text-decoration: none;
+    white-space: nowrap;
+  }
+  
+  .nav-links {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+  }
+  
+  .nav-link {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #2d3748;
+    text-decoration: none;
+  }
+  
+  .nav-link:hover {
+    color: #4a90e2;
+  }
+  
+  /* Right side: Profile, Sign Up, Log In */
+  .nav-right {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    flex-shrink: 0;
+    white-space: nowrap;
+  }
+  
+  /* Button-style links */
+  .nav-button {
+    padding: 6px 12px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #fff;
+    background-color: #4a90e2;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+  }
+  
+  .nav-button:hover {
+    background-color: #357ab8;
+  }
+  
+  .login-btn {
+    background-color: #2d3748;
+  }
+  
+  .login-btn:hover {
+    background-color: #1a202c;
+  }
+  
+  /* Responsive tweaks */
+  @media (max-width: 768px) {
+    .nav-link, .nav-button {
+      font-size: 0.85rem;
+    }
+  
+    .logo {
+      font-size: 1.3rem;
+    }
+  }
+  

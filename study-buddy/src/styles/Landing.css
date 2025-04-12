@@ -1,0 +1,290 @@
+/* Hero Section */
+.landing-hero {
+    height: 70vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .hero-overlay {
+    background-color: rgba(0, 0, 0, 0.6); /* dark overlay */
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    border-radius: 8px;
+    max-width: 600px;
+  }
+  
+  .hero-overlay h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-overlay p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .hero-btn {
+    background-color: #990033; /* NMSU maroon */
+    color: white;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+  }
+  
+  .hero-btn:hover {
+    background-color: #7a002b;
+  }
+  
+  /* Scrollable Text/Image Sections */
+  .scroll-sections {
+    background-color: #fff;
+    padding: 4rem 2rem;
+  }
+  
+  .scroll-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 4rem;
+    flex-wrap: wrap;
+  }
+  
+  .scroll-section.reverse {
+    flex-direction: row-reverse;
+  }
+  
+  .scroll-text {
+    max-width: 500px;
+  }
+  
+  .scroll-text h2 {
+    font-size: 2rem;
+    color: #990033;
+    margin-bottom: 1rem;
+  }
+  
+  .scroll-text p {
+    font-size: 1.1rem;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  .scroll-image {
+    width: 300px;
+    height: auto;
+    border-radius: 12px;
+    object-fit: cover;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .features-list {
+    list-style: none;
+    padding: 0;
+    margin: 1.5rem 0;
+  }
+  
+  .features-list li {
+    margin-bottom: 1.25rem;
+    font-size: 1.05rem;
+    line-height: 1.5;
+  }
+  
+  .services .boxes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    justify-content: center;
+    padding: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .services .boxes .box {
+    background: white;
+    color: #1a1a1a;
+    border-radius: 12px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px 20px;
+    text-align: center;
+    max-width: 420px;
+    width: 100%; 
+    margin: 0 auto; 
+    transition: all 0.3s ease;
+  }
+  
+  .services .boxes .box:hover {
+    background-color: #990033;
+    color: white;
+    border-color: #990033;
+    box-shadow: 0 0 30px 10px #990033;
+  }
+  
+  .services .boxes .box .icon {
+    height: 50px;
+    width: 50px;
+    background: #990033;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+    color: #fff;
+    margin: 0 auto 15px auto;
+    transition: 0.3s ease;
+  }
+  
+  .boxes .box:hover .icon {
+    background-color: white;
+    color: #990033;
+  }
+  
+  .services .title {
+    text-align: center;
+    font-size: 2rem;
+    color: #990033;
+    margin-bottom: 30px;
+  }
+  
+  .services .title span::before,
+  .services .title span::after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 50px;
+    background: #990033;
+    margin: 10px auto;
+  }
+  
+  @media (max-width: 768px) {
+    .services .boxes {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .services .boxes .box {
+      width: 90%;
+      max-width: 400px;
+    }
+  }
+
+  /* === Testimonials === */
+.testimonials {
+    padding: 60px 20px;
+    text-align: center;
+    background: #fff;
+  }
+  
+  .testimonials h2 {
+    font-size: 2.2rem;
+    color: #990033;
+    margin-bottom: 40px;
+  }
+  
+  .testimonial-boxes {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  
+  .testimonial-box {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 25px;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .testimonial-box:hover {
+    transform: translateY(-5px);
+  }
+  
+  .testimonial-box p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    font-style: italic;
+  }
+  
+  .stars {
+    color: #ffc107;
+    margin-bottom: 10px;
+  }
+
+  .testimonial-photo {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 0 auto 15px auto;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  }  
+  
+  .testimonial-box span {
+    color: #555;
+    font-weight: bold;
+  }
+  
+  /* === FAQ Section === */
+  .faq-section {
+    width: 100%;
+    padding: 60px 20px;
+    background-color: #f8f8f8;
+    text-align: center;
+  }
+  
+  .faq-section h2 {
+    font-size: 2.2rem;
+    color: #990033;
+    margin-bottom: 30px;
+  }
+  
+  .faq-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: left;
+  }
+  
+  .faq-container details {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px 20px;
+    margin-bottom: 15px;
+    background-color: #fff;
+    transition: all 0.3s ease;
+  }
+  
+  .faq-container details[open] {
+    background-color: #fff0f5;
+    border-color: #990033;
+  }
+  
+  .faq-container summary {
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #990033;
+    cursor: pointer;
+  }
+  
+  .faq-container summary::-webkit-details-marker {
+    display: none;
+  }
+  
+  .faq-container p {
+    margin-top: 10px;
+    color: #333;
+  }
+  

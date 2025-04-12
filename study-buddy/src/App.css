@@ -1,0 +1,74 @@
+:root {
+  --nmsu-maroon: #990033;  /* PMS 208 */
+  --nmsu-beige: #d6cfc4;   /* PMS 407 */
+  --nmsu-blue: #00a3e0;    /* PMS 299 */
+  --nmsu-gray: #7a7a7a;    /* PMS 424 */
+  --nmsu-light-gray: #cccccc;
+  --nmsu-white: #ffffff;
+}
+
+/* Base Reset */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--nmsu-white);
+  font-family: 'Poppins', sans-serif;
+  color: #1a1a1a;
+}
+
+/* Header */
+.navbar {
+  background-color: var(--nmsu-maroon);
+  color: white;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.navbar a {
+  color: white;
+}
+
+.navbar a:hover {
+  color: var(--nmsu-beige);
+}
+
+/* Footer */
+footer {
+  background-color: var(--nmsu-maroon);
+  padding: 20px;
+  text-align: center;
+  color: white;
+  font-size: 0.95rem;
+  margin-top: 40px;
+}
+
+footer a {
+  color: white;
+  text-decoration: underline;
+}
+
+footer a:hover {
+  color: var(--nmsu-blue);
+}
+
+/* Page Content */
+.page-container {
+  padding-top: 80px; /* if fixed navbar */
+  min-height: 80vh;
+  background-color: white;
+  padding: 2rem;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+.app-content {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-content > .footer {
+  margin-top: auto;
+}

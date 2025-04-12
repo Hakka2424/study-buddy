@@ -1,0 +1,45 @@
+:root {
+  --nmsu-maroon: #990033;  /* PMS 208 */
+  --nmsu-white: #ffffff;
+}
+
+/* Apply white background to entire page */
+body {
+  background-color: var(--nmsu-white);
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Make sure landing content has white bg too */
+.page-container, .landing-page {
+  background-color: var(--nmsu-white);
+  min-height: 100vh;
+  padding-top: 60px; /* offset fixed navbar */
+  color: #1a1a1a;
+}
+
+/* Navbar uses maroon */
+.navbar {
+  background-color: var(--nmsu-maroon);
+  color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+  z-index: 1000;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin: 0 0.75rem;
+}
+
+.navbar a:hover {
+  color: #d6cfc4; /* PMS 407 beige */
+}
