@@ -29,7 +29,7 @@ Welcome to **Study Buddy**, a web platform built to help **NMSU Computer Science
 
 ### **1️⃣ Clone the Repository**
 ```bash
-git clone https://github.com/Stonebraker39/study-buddy.git
+git clone https://github.com/Hakka2424/study-buddy.git
 cd study-buddy
 ```
 
@@ -54,7 +54,7 @@ http://localhost:5173/
 ## **🛠 Tech Stack**
 
 - ⚛️ **React** with **Vite**  
-- 🔥 **Firebase (Planned)** – For auth, chat, and real-time updates  
+- 🔥 **Firebase** – For auth, chat, and real-time updates  
 - 💡 **React Router** – For page navigation  
 - 🎨 **Custom CSS** + Google Fonts – For layout and styling  
 - 🖼️ **Static Assets** – Optimized images and themed sections  
@@ -73,14 +73,6 @@ http://localhost:5173/
 
 ---
 
-## **💬 Student Reviews**
-
-> “Study Buddy helped me pass CS 273 by matching me with a classmate studying the same night!” – Alex R.  
-> “I’m usually shy, but this platform made it easy to connect with other students.” – Morgan K.  
-> “Super helpful during finals week — found two partners in CS 278!” – Jamie L.  
-
----
-
 ## **📌 Planned Features**
 
 - 🔐 Firebase Auth login/signup  
@@ -93,9 +85,9 @@ http://localhost:5173/
 
 ## **🏆 Credits & Acknowledgments**
 
-- **Developers:** NMSU CS Students  
-- **Project Repo:** [Study Buddy GitHub](https://github.com/Stonebraker39/study-buddy)  
-- **Course:** CS 482 – Database Management Systems  
+- **Developers:** NMSU CS Students (Tyreke, Jake, Anwis, and Lucas
+- **Project Repo:** [Study Buddy GitHub](https://github.com/Hakka2424/study-buddy.git)
+- **Course:** CS 382 – MODERN WEB TECHNOLOGIES
 - **Instructor:** Bill Hamilton  
 - **Year:** 2025  
 - **License:** MIT License
